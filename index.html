@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>As 3 Ondas da Inteligência Artificial</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <span class="badge">Fundamentos da IA Aplicada</span>
+      <h1>As 3 Ondas da Inteligência Artificial</h1>
+      <p>Estude a evolução da IA de forma interativa: regras, aprendizado de máquina e Big Data com IA cognitiva.</p>
+      <button id="startBtn">Começar estudo</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="timeline-section">
+      <h2>Linha do Tempo da IA</h2>
+      <p class="subtitle">Clique em cada onda para ver os pontos mais importantes.</p>
+
+      <div class="timeline">
+        <button class="wave-btn active" data-wave="1">
+          <span>1ª Onda</span>
+          <small>Regras</small>
+        </button>
+
+        <button class="wave-btn" data-wave="2">
+          <span>2ª Onda</span>
+          <small>Machine Learning</small>
+        </button>
+
+        <button class="wave-btn" data-wave="3">
+          <span>3ª Onda</span>
+          <small>Big Data</small>
+        </button>
+      </div>
+
+      <div class="wave-card" id="waveCard">
+        <!-- Conteúdo via JS -->
+      </div>
+    </section>
+
+    <section class="comparison">
+      <h2>Comparação Rápida</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Onda</th>
+              <th>Ideia Principal</th>
+              <th>Exemplo</th>
+              <th>Palavra-chave</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1ª Onda</td>
+              <td>Sistemas baseados em regras</td>
+              <td>MYCIN</td>
+              <td>Regras</td>
+            </tr>
+            <tr>
+              <td>2ª Onda</td>
+              <td>Aprender com dados</td>
+              <td>Antifraude bancário</td>
+              <td>Aprendizado</td>
+            </tr>
+            <tr>
+              <td>3ª Onda</td>
+              <td>Big Data + IA Cognitiva</td>
+              <td>ChatGPT, Netflix, Alexa</td>
+              <td>Dados massivos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="simulator">
+      <h2>Simulador: Como a IA evoluiu?</h2>
+      <p class="subtitle">Veja a diferença entre programar regras, treinar com dados e usar dados massivos.</p>
+
+      <div class="simulator-box">
+        <div class="screen" id="simScreen">
+          Clique em uma etapa para iniciar.
+        </div>
+
+        <div class="sim-buttons">
+          <button data-sim="rules">1ª Onda: Regras</button>
+          <button data-sim="ml">2ª Onda: Aprendizado</button>
+          <button data-sim="bigdata">3ª Onda: Big Data</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz">
+      <h2>Quiz Rápido</h2>
+      <div id="quizBox"></div>
+      <button id="nextQuestion">Próxima pergunta</button>
+      <p id="score"></p>
+    </section>
+
+    <section class="summary">
+      <h2>Resumo para Decorar</h2>
+      <div class="memory-card">
+        <h3>Macete: RAB</h3>
+        <p><strong>R</strong>egras → <strong>A</strong>prendizado → <strong>B</strong>ig Data</p>
+        <p>1ª Onda: a IA segue regras.</p>
+        <p>2ª Onda: a IA aprende com exemplos.</p>
+        <p>3ª Onda: a IA aprende com muitos dados e entende linguagem, imagens e padrões complexos.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Aplicação de estudo criada para revisar Fundamentos de Inteligência Artificial Aplicada.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
